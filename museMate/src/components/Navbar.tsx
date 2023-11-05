@@ -7,9 +7,9 @@ import { SELECTEDPAGE } from "../types/selectedPageEnums";
 
 
 type Props = {
-  isTopOfPage: boolean;
+  
   selectedPage: SELECTEDPAGE;
-  setSelectedPage: (value: string) => void;
+  setSelectedPage: (value: SELECTEDPAGE) => void;
 };
 
 const Navbar = ({  selectedPage, setSelectedPage }: Props) => {

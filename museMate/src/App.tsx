@@ -7,7 +7,7 @@ import { SELECTEDPAGE } from './types/selectedPageEnums';
 
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState<string>(SELECTEDPAGE.HOME );
+  const [selectedPage, setSelectedPage] = useState<SELECTEDPAGE>(SELECTEDPAGE.HOME );
 
   return (
     <>

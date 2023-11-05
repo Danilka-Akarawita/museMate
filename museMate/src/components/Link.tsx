@@ -5,7 +5,7 @@ import { SELECTEDPAGE } from "../types/selectedPageEnums";
 type Props = {
   page: string;
   selectedPage: SELECTEDPAGE;
-  setSelectedPage: (value: string) => void;
+  setSelectedPage: (value: SELECTEDPAGE) => void;
 };
 
 const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
