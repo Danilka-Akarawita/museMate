@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        
         "gray-20": "#F8F4EB",
         "gray-50": "#EFE6E6",
         "gray-100": "#DFCCCC",
@@ -15,7 +16,7 @@ module.exports = {
         "secondary-500": "#FFC132",
       },
       backgroundImage: (theme) => ({
-        "gradient-yellowred":
+        "gradient-yellow red":
           "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
         //"mobile-home": "url('./assets/HomePageGraphic.png')",
       }),

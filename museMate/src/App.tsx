@@ -6,7 +6,8 @@ function App() {
 
   return (
     <>
-    Danilka
+    <div className="bg-lime-200">This text is gray</div>
+
     </>
   
   )
