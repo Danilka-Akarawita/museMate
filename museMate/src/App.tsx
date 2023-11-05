@@ -1,12 +1,13 @@
 
 import './App.css'
+import Navbar from './assets/components/navbar'
 
 function App() {
  
 
   return (
     <>
-    <div className="bg-lime-200">This text is gray</div>
+      <Navbar/>
 
     </>
   
