@@ -2,6 +2,7 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import useMediaQuery from '../../hooks/useMediaQuery'
 import { SELECTEDPAGE } from '../../types/selectedPageEnums'
+import { motion } from 'framer-motion'
 
 type Props = {
     setSelectedPage:(value:SELECTEDPAGE)=>void
@@ -18,7 +19,15 @@ const Home = ({setSelectedPage}: Props) => {
     <div className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6">
         
         <div className="z-10 mt-32 md:basis-3/5">
-            <div className='md:-mt-20'>
+            <motion.div  className="md:-mt-20"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}>
                 dd
                 <div className='relative'>
                     
@@ -29,8 +38,17 @@ const Home = ({setSelectedPage}: Props) => {
                 <p className="mt-8 text-sm">
                     wgwwnwewewinewefwnefinwenweifwewenfwe wf efwefnweinfweinfwe fwefwnefnwef w efwejnweknfwe fwefnwe fwlefwef wefwnef 
                 </p>
-            </div>
-            <div className="mt-8 flex items-center gap-8">
+            </motion.div>
+            <motion.div
+            className="mt-8 flex items-center gap-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{delay:0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}>
             <button className='bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-3 rounded '>
                           Join now
             </button>
@@ -41,9 +59,9 @@ const Home = ({setSelectedPage}: Props) => {
             >
               <p>Learn More</p>
             </AnchorLink>
-            </div>
+            </motion.div>
         </div>
-        <div>
+        <div className='flex basis-3/5 justify-center md:z-10 md:ml-40  md:mt-16 md:justify-items-end'>
             3d image 
         </div>
     </div>
