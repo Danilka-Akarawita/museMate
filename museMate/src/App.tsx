@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css'
 import Navbar from './components/Navbar';
 import { SELECTEDPAGE } from './types/selectedPageEnums';
+import Home from './pages/homePage/home';
 
 
 
@@ -25,7 +26,7 @@ function App() {
   return (
     <>
       <Navbar  isTopOfPage={true} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-
+      <Home setSelectedPage={setSelectedPage}/>
     </>
   
   )
