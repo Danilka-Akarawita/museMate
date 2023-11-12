@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import { SELECTEDPAGE } from './types/selectedPageEnums';
 import Home from './pages/homePage/home';
 import Benefits from './pages/benefitPage/Benefits';
+import Studio from './pages/studioPage/Studio';
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Navbar  isTopOfPage={true} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
+      <Studio setSelectedPage={setSelectedPage}/>
     </>
   
   )

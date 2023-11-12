@@ -11,4 +11,11 @@ export  enum SELECTEDPAGE{
     title: string;
     description: string;
   }
+
+  export interface StudioType {
+    name: string;
+  description: string;
+  image?: string;
+  }
+  
   
