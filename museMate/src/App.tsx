@@ -6,6 +6,7 @@ import { SELECTEDPAGE } from './types/selectedPageEnums';
 import Home from './pages/homePage/home';
 import Benefits from './pages/benefitPage/Benefits';
 import Studio from './pages/studioPage/Studio';
+import Footer from './pages/footer/Footer';
 
 
 
@@ -31,6 +32,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
       <Studio setSelectedPage={setSelectedPage}/>
+      <Footer/>
     </>
   
   )
