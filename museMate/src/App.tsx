@@ -7,6 +7,7 @@ import Home from './pages/homePage/home';
 import Benefits from './pages/benefitPage/Benefits';
 import Studio from './pages/studioPage/Studio';
 import Footer from './pages/footer/Footer';
+import DetailedForm from './pages/bookingPage/DetailedForm';
 
 
 
@@ -28,11 +29,12 @@ function App() {
 
   return (
     <>
-      <Navbar  isTopOfPage={true} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+      {/* <Navbar  isTopOfPage={true} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
       <Studio setSelectedPage={setSelectedPage}/>
-      <Footer/>
+      <Footer/> */}
+      <DetailedForm/>
     </>
   
   )
