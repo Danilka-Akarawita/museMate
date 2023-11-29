@@ -13,7 +13,7 @@ const personSchema=yup.object().shape({
   .integer("A phone number can't include a decimal point")
   .min(8)
   .required('A phone number is required'),
-  email:yup.string().email('Invalid email').required('Required'),
+  
 })
 interface Values {
   firstName: string;

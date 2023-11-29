@@ -11,12 +11,21 @@ export  enum SELECTEDPAGE{
     title: string;
     description: string;
   }
-
   export interface StudioType {
-    id:string,
+    id: string;
     name: string;
-  description: string;
-  image?: string;
+    description: string;
+    image?: string;
+    chargePerHr?: string; 
+    
+    instruments?: InstrumentType[];
+  }
+  
+  export interface InstrumentType {
+    itemName: string;
+    itemCount: number;
+    itemModel: string;
+    itemImage?: string;
   }
   
   
