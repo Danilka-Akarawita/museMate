@@ -13,6 +13,7 @@ export  enum SELECTEDPAGE{
   }
 
   export interface StudioType {
+    id:string,
     name: string;
   description: string;
   image?: string;

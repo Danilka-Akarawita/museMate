@@ -3,11 +3,15 @@ import { useEffect, useState } from 'react';
 import './App.css'
 import Navbar from './components/Navbar';
 import { SELECTEDPAGE } from './types/selectedPageEnums';
-import Home from './pages/homePage/home';
+
 import Benefits from './pages/benefitPage/Benefits';
 import Studio from './pages/studioPage/Studio';
 import Footer from './pages/footer/Footer';
 import DetailedForm from './pages/bookingPage/DetailedForm';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/homePage/Home';
+import StudioContent from './pages/studioPage/StudioContent';
+import StudioCards from './pages/studioPage/StudioCards';
 
 
 
@@ -29,12 +33,22 @@ function App() {
 
   return (
     <>
-      {/* <Navbar  isTopOfPage={true} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+      <Navbar  isTopOfPage={true} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
-      <Studio setSelectedPage={setSelectedPage}/>
-      <Footer/> */}
-      <DetailedForm/>
+      <Studio/>
+      <Footer/>
+      
+      {/* <DetailedForm/> */}
+
+      <Routes>
+        {/* <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/details/:id" element={<StudioDetailPage/>} />
+        <Route path="/book" element={<Booking />} /> */}
+       <Route  path="/details/:id" element={<StudioContent/>} />
+        {/* <Route path="/studioDetails/:id" element={<StudioDetailPage/>}/> */}
+      </Routes>
     </>
   
   )
