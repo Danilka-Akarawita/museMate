@@ -4,11 +4,9 @@ import useMediaQuery from '../../hooks/useMediaQuery'
 import { SELECTEDPAGE } from '../../types/selectedPageEnums'
 import { motion } from 'framer-motion'
 
-type Props = {
-    setSelectedPage:(value:SELECTEDPAGE)=>void
-}
 
-const Home = ({setSelectedPage}: Props) => {
+
+const Home = () => {
         const isAboveMediumScreens=useMediaQuery("(min-width:1060px)");
 
   return (
@@ -54,8 +52,8 @@ const Home = ({setSelectedPage}: Props) => {
             </button>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-              onClick={() => setSelectedPage(SELECTEDPAGE.CONTACTUS)}
-              href={`#${SELECTEDPAGE.CONTACTUS}`}
+            
+             
             >
               <p>Learn More</p>
             </AnchorLink>

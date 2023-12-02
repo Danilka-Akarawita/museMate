@@ -18,14 +18,14 @@ export  enum SELECTEDPAGE{
     image?: string;
     chargePerHr?: string; 
     
-    instruments?: InstrumentType[];
+    instruments: InstrumentType[];
   }
   
   export interface InstrumentType {
     itemName: string;
     itemCount: number;
     itemModel: string;
-    itemImage?: string;
+    itemImage: string;
   }
   
   

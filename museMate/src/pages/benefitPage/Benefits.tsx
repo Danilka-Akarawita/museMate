@@ -28,14 +28,12 @@ const benefits: Array<BenefitType> = [
     },
   ];
 
-const Benefits = ({setSelectedPage}: Props) => {
+const Benefits = () => {
   return (
     <section
     id='benefits'
     className="mx-auto min-h-full w-5/6 py-20">
-        <motion.div
-         onViewportEnter={()=>setSelectedPage(SELECTEDPAGE.BENEFITS)}
-        >
+        
             <motion.div 
             className='md: my-5 md: w-4/5'
             initial="hidden"
@@ -62,12 +60,12 @@ const Benefits = ({setSelectedPage}: Props) => {
                      key={benefit.title}
                     icon={benefit.icon}
                     title={benefit.title}
-                    description={benefit.description}
-                    setSelectedPage={setSelectedPage}/>
+                    description={benefit.description}/>
+                    
                 ))}
                 </div>
 
-        </motion.div>
+ 
 
     </section>
   )
